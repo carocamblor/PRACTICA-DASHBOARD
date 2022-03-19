@@ -18,10 +18,6 @@ function Personajes() {
             img: 'batman.jpg'
         },
         {
-            name: 'Capitán América',
-            img: 'capAmerica.jpg'
-        },
-        {
             name: 'Hulk',
             img: 'hulkSmall.jpg'
         },
@@ -34,24 +30,28 @@ function Personajes() {
             img: 'yoda.jpg'
         },
         {
-            name: 'Superman',
-            img: 'superman.jpg'
-        },
-        {
-            name: 'Dr. Strange',
-            img: 'strange.jpg'
-        },
-        {
-            name: 'Vegetta',
-            img: 'vegetta.jpg'
-        },
-        {
             name: 'Obi Wan',
             img: 'obiWan.jpg'
         },
         {
             name: 'Kylo Ren',
             img: 'kyloRen.jpg'
+        },
+        {
+            name: 'Capitán América',
+            img: 'capAmerica.jpg'
+        },
+        {
+            name: 'Vegetta',
+            img: 'vegetta.jpg'
+        },
+        {
+            name: 'Superman',
+            img: 'superman.jpg'
+        },
+        {
+            name: 'Dr. Strange',
+            img: 'strange.jpg'
         },
     ]
 
