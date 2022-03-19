@@ -1,0 +1,9 @@
+.character-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.character-card img {
+    width: 200px;
+}
