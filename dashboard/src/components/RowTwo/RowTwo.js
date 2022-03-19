@@ -2,6 +2,9 @@ import React from "react";
 import Category from "../Category/Category";
 
 function RowTwo() {
+
+    let categories = ['Category 01', 'Category 02', 'Category 03', 'Category 04', 'Category 05', 'Category 06']
+
     return (
         <div className="row">
         {/* <!-- Last Product in DB --> */}
@@ -28,13 +31,7 @@ function RowTwo() {
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <Category name="Category 01"/>
-                        <Category name="Category 02"/>
-                        <Category name="Category 03"/>
-                        <Category name="Category 04"/>
-                        <Category name="Category 05"/>
-                        <Category name="Category 06"/>
-                        
+                        <Category category={categories}/>     
                     </div>
                 </div>
             </div>

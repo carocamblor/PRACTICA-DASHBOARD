@@ -2,6 +2,22 @@ import React from "react";
 import SidebarItems from "../SidebarItems/SidebarItems";
 
 function Sidebar() {
+
+	let sidebarItems = [
+		{
+			title: 'Pages',
+			icon: 'fas fa-fw fa-folder'
+		},
+		{
+			title: 'Charts',
+			icon: 'fas fa-fw fa-chart-area'
+		},
+		{
+			title: 'Table',
+			icon: 'fas fa-fw fa-table'
+		},
+	]
+
     return (
         <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -29,9 +45,11 @@ function Sidebar() {
 			{/* <!-- Heading --> */}
 			<div className="sidebar-heading">Actions</div>
 
-            <SidebarItems title="Pages" icon="fas fa-fw fa-folder"/>
+			<SidebarItems item={sidebarItems}/>
+			
+            {/* <SidebarItems title="Pages" icon="fas fa-fw fa-folder"/>
             <SidebarItems title="Charts" icon="fas fa-fw fa-chart-area"/>
-            <SidebarItems title="Tables" icon="fas fa-fw fa-table"/>
+            <SidebarItems title="Tables" icon="fas fa-fw fa-table"/> */}
 
 			{/* <!-- Divider --> */}
 			<hr className="sidebar-divider d-none d-md-block"/>
