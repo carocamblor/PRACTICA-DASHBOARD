@@ -10,7 +10,7 @@ function Card(props) {
         <img src={`/assets/images/${unPersonaje.img}`} alt={unPersonaje.name} />
         <h5>{unPersonaje.name}</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?</p>
-        <a href="https://github.com/carocamblor">Ver más</a>
+        <a href={`https://www.google.com/search?q=${unPersonaje.name}`}>Ver más</a>
     </div>
     
     )
