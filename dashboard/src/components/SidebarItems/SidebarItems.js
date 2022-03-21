@@ -3,17 +3,12 @@ import React from "react";
 function SidebarItems(props) {
     return (
 
-    props.item.map((unItem, idx) =>
-
-    <li className="nav-item" key={unItem + idx}>
+    <li className="nav-item">
         <a className="nav-link" href="/">
-            <i className={unItem.icon}></i>
-            <span>{unItem.title}</span>
+            <i className={props.data.icon}></i>
+            <span>{props.data.title}</span>
         </a>
     </li>
-    
-    )
-    
     
     );
 };

@@ -7,51 +7,63 @@ function Personajes() {
     let personajes = [
         {
             name: 'Ahsoka',
-            img: 'ahsoka.jpg'
+            img: 'ahsoka.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Anakin',
-            img: 'anakin.jpg'
+            img: 'anakin.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Batman',
-            img: 'batman.jpg'
+            img: 'batman.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Hulk',
-            img: 'hulkSmall.jpg'
+            img: 'hulkSmall.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Luke',
-            img: 'luke.jpg'
+            img: 'luke.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Yoda',
-            img: 'yoda.jpg'
+            img: 'yoda.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Obi Wan',
-            img: 'obiWan.jpg'
+            img: 'obiWan.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Kylo Ren',
-            img: 'kyloRen.jpg'
+            img: 'kyloRen.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Capitán América',
-            img: 'capAmerica.jpg'
+            img: 'capAmerica.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Vegetta',
-            img: 'vegetta.jpg'
+            img: 'vegetta.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Superman',
-            img: 'superman.jpg'
+            img: 'superman.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
         {
             name: 'Dr. Strange',
-            img: 'strange.jpg'
+            img: 'strange.jpg',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?'
         },
     ]
 
@@ -59,7 +71,7 @@ function Personajes() {
     
     <div className="personajes-row">
 
-        <Card personaje={personajes}/>
+        {personajes.map((personaje, idx) => <Card key={personaje.name + idx} data={personaje}/>)}
         
     </div>
     );

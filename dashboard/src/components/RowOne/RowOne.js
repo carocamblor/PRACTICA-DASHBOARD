@@ -30,8 +30,8 @@ function RowOne() {
 
     return (
         <div className="row">
-        
-        <RowOneColumns columns={rowOneColumns}/>
+
+        {rowOneColumns.map((column, idx) => <RowOneColumns key={column.title + idx} data={column}/>)}
 
         </div> 
     );

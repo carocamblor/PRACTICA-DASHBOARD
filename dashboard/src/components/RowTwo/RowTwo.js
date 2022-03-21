@@ -31,7 +31,7 @@ function RowTwo() {
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <Category category={categories}/>     
+                        {categories.map((unCategory, idx) => <Category key={unCategory + idx} data={unCategory}/>)}   
                     </div>
                 </div>
             </div>

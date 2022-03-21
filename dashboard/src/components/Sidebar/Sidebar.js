@@ -45,7 +45,7 @@ function Sidebar() {
 			{/* <!-- Heading --> */}
 			<div className="sidebar-heading">Actions</div>
 
-			<SidebarItems item={sidebarItems}/>
+			{sidebarItems.map((item, idx) => <SidebarItems key={item.title + idx} data={item}/>)}
 			
             {/* <SidebarItems title="Pages" icon="fas fa-fw fa-folder"/>
             <SidebarItems title="Charts" icon="fas fa-fw fa-chart-area"/>
